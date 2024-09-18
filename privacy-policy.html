@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+	<link rel="manifest" href="./favicons/site.webmanifest" />
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#0ca4a5" />
+	<link rel="shortcut icon" href="./favicons/favicon.ico" />
+	<link rel="icon" href="./favicons/favicon.png" />
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+	<!-- Tell browser this site is responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Tell browser this site supports light and dark mode -->
+	<meta name="color-scheme" content="light dark" />
+	<!-- Color for browser url bar in mobile/Safari -->
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#b28cf2" />
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4612A1" />
+	<!-- Disable Google FLOC -->
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
+	<script>
+		// Calling this here so that it loads as quickly as possible
+		// Avoiding a flash of light mode in case dark mode is used
+		const theme = localStorage.getItem('theme-preference') || 'auto';
+		document.firstElementChild?.setAttribute('data-theme', theme);
+	</script>
+
+	
+		<link href="./_app/immutable/assets/0.9ee00741.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Button.b2541fdf.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.a6f79b65.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Footer.56b17f16.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/14.3b6e42e0.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.3060a60e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.cdc996a9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.33a7651d.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.45975669.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.bfdd2d96.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/store.e8476abb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Button.e65ffdbd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/regex.7dfa9b23.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.8ff6eb7c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Footer.82a9a199.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/meta.1db763f5.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/14.0ee3d48d.js"><title>KoukouGata</title><!-- HEAD_svelte-x8y2df_START --><link rel="icon" href="/favicons/favicon.ico" type="image/x-icon"><link rel="canonical" href="https://koukougata.gr/"><meta name="keywords" content="KoukouGata, SvelteKit, Template, Blog, Starter, Static Site"><meta name="description" content="A light, neat, and easy-to-use SvelteKit template for your next website."><meta property="og:description" content="A light, neat, and easy-to-use SvelteKit template for your next website."><meta name="twitter:description" content="A light, neat, and easy-to-use SvelteKit template for your next website."><meta property="og:title" content="KoukouGata"><meta name="twitter:title" content="KoukouGata"><meta property="og:image" content="https://koukougata.gr//images/site-preview.png"><meta name="twitter:image" content="https://koukougata.gr//images/site-preview.png"><meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-x8y2df_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div id="svelte-root">
+<main>
+
+
+<div class="waves-container svelte-19u8jg4"><svg class="waves svelte-19u8jg4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax svelte-19u8jg4"><use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(var(--color--page-background-rgb),0.7)" class="svelte-19u8jg4"></use><use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(var(--color--page-background-rgb),0.5)" class="svelte-19u8jg4"></use><use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(var(--color--page-background-rgb),0.3)" class="svelte-19u8jg4"></use><use xlink:href="#gentle-wave" x="48" y="7" fill="var(--color--page-background)" class="svelte-19u8jg4"></use></g></svg>
+</div>
+<header class="svelte-xwlpm4">
+	<div class="links-overlay  svelte-xwlpm4"></div>
+	<nav class="container svelte-xwlpm4"><a class="logo svelte-xwlpm4" href="/" aria-label="Site logo"><div class="logo svelte-qb3fqf animated"><img src="/favicons/favicon.png" alt="Site Logo" class="logo-image svelte-qb3fqf">
+	<svg id="logo-text" width="723.84009" height="116.720268" viewBox="0 0 723.84009 116.720269" fill="none" xmlns="http://www.w3.org/2000/svg" class="svelte-qb3fqf"><text xml:space="preserve" id="text" transform="translate(-278.77228,-206.83728)" class="svelte-qb3fqf"><tspan x="275.57227" y="292.17088" id="tspan1319"><tspan style="font-size:106.667px;font-family:YoungSerif;" id="tspan1317">KoukouGata</tspan></tspan></text></svg>
+</div></a>
+		
+		<div class="hamburger-wrapper svelte-xwlpm4"><div class="hamburger svelte-4ag6yp"><div class="bar svelte-4ag6yp"></div>
+	<div class="bar svelte-4ag6yp"></div>
+	<div class="bar svelte-4ag6yp"></div></div></div>
+		
+		<div class="links svelte-xwlpm4">
+			
+			
+			<a href="/blog/Υγεία/" class="svelte-xwlpm4">Υγεία</a>
+				<a href="/blog/Επιστήμη/" class="svelte-xwlpm4">Επιστήμη</a>
+				<a href="/blog/Gaming/" class="svelte-xwlpm4">Gaming</a>
+				<a href="/blog/Τεχνολογία/" class="svelte-xwlpm4">Τεχνολογία</a>
+				<a href="/blog/Ταξίδια/" class="svelte-xwlpm4">Ταξίδια</a>
+				<a href="/rss.xml" target="_blank" rel="noopener noreferrer" title=" Εγγραφείτε στο RSS Feed" class="svelte-1llmev"><svg width="100%" height="100%" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19C12 14.8 9.2 12 5 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 19C19 10.6 13.4 5 5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 19.01L5.01 18.9989" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+				<noscript>
+	
+	<style>.theme-toggle {
+			display: none !important;
+		}
+	</style></noscript>
+<button class="theme-toggle svelte-niuf71" title="Αλλαγή μεταξύ φωτεινού και σκοτεινού θέματος"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><mask id="moon" class="svelte-niuf71"><rect x="0" y="0" width="100%" height="100%" fill="white" class="svelte-niuf71"></rect><circle cx="40" cy="8" r="11" fill="black" class="svelte-niuf71"></circle></mask><circle id="sun" cx="12" cy="12" r="11" mask="url(#moon)" class="svelte-niuf71"></circle><g id="sun-beams" class="svelte-niuf71"><line x1="12" y1="1" x2="12" y2="3" class="svelte-niuf71"></line><line x1="12" y1="21" x2="12" y2="23" class="svelte-niuf71"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" class="svelte-niuf71"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" class="svelte-niuf71"></line><line x1="1" y1="12" x2="3" y2="12" class="svelte-niuf71"></line><line x1="21" y1="12" x2="23" y2="12" class="svelte-niuf71"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" class="svelte-niuf71"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" class="svelte-niuf71"></line></g></svg>
+	<span class="label svelte-niuf71">Auto</span>
+</button>
+				
+				
+				
+				</div></nav>
+</header>
+<main><div class="privacy-policy-page svelte-1vlljhi"><div class="container svelte-1vlljhi"><h1 class="svelte-1vlljhi">Πολιτική Απορρήτου</h1>
+		<p class="svelte-1vlljhi">Τελευταία ενημέρωση: 15 Αυγούστου 2024</p>
+		<p class="svelte-1vlljhi">Αυτή η Πολιτική Απορρήτου περιγράφει τις πολιτικές και τις διαδικασίες μας σχετικά με τη
+			συλλογή, τη χρήση και την αποκάλυψη των πληροφοριών σας όταν χρησιμοποιείτε την Υπηρεσία και
+			σας ενημερώνει για τα δικαιώματά σας σχετικά με το απόρρητο και τον τρόπο με τον οποίο ο νόμος
+			σας προστατεύει.
+		</p>
+		<p class="svelte-1vlljhi">Χρησιμοποιούμε τα Προσωπικά σας δεδομένα για να παρέχουμε και να βελτιώνουμε την Υπηρεσία.
+			Χρησιμοποιώντας την Υπηρεσία, συμφωνείτε με τη συλλογή και τη χρήση πληροφοριών σύμφωνα με
+			αυτήν την Πολιτική Απορρήτου. Αυτή η Πολιτική Απορρήτου έχει δημιουργηθεί με τη βοήθεια του <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.
+		</p>
+		<h2 class="svelte-1vlljhi">Ερμηνεία και Ορισμοί</h2>
+		<h3 class="svelte-1vlljhi">Ερμηνεία</h3>
+		<p class="svelte-1vlljhi">Οι λέξεις των οποίων το αρχικό γράμμα είναι κεφαλαίο έχουν νοήματα που ορίζονται υπό τις
+			ακόλουθες συνθήκες. Οι ακόλουθοι ορισμοί θα έχουν την ίδια σημασία ανεξάρτητα από το αν
+			εμφανίζονται σε ενικό ή πληθυντικό αριθμό.
+		</p>
+		<h3 class="svelte-1vlljhi">Ορισμοί</h3>
+		<p class="svelte-1vlljhi">Για τους σκοπούς αυτής της Πολιτικής Απορρήτου:</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Λογαριασμός</strong> σημαίνει έναν μοναδικό λογαριασμό που δημιουργείται για Εσάς για
+					να έχετε πρόσβαση στην Υπηρεσία μας ή σε μέρη της Υπηρεσίας μας.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Συνδεδεμένη Εταιρεία</strong> σημαίνει μια οντότητα που ελέγχει, ελέγχεται από ή βρίσκεται
+					υπό κοινό έλεγχο με ένα μέρος, όπου «έλεγχος» σημαίνει κατοχή του 50% ή περισσότερων των μετοχών,
+					του κεφαλαίου ή άλλων τίτλων που δικαιούνται ψήφο για την εκλογή διευθυντών ή άλλης διευθύνουσας
+					αρχής.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Εταιρεία</strong> (αναφέρεται είτε ως «η Εταιρεία», «Εμείς», «Εμάς» ή «Μας» σε αυτή
+					τη Συμφωνία) αναφέρεται στην KoukouGata.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Cookies</strong> είναι μικρά αρχεία που τοποθετούνται στον υπολογιστή, κινητή συσκευή
+					ή σε οποιαδήποτε άλλη συσκευή σας από έναν ιστότοπο, περιέχοντας τις λεπτομέρειες του ιστορικού
+					περιήγησής σας σε αυτόν τον ιστότοπο μεταξύ άλλων χρήσεών τους.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Χώρα</strong> αναφέρεται στην: Ελλάδα</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Συσκευή</strong> σημαίνει οποιαδήποτε συσκευή που μπορεί να έχει πρόσβαση στην Υπηρεσία,
+					όπως ένας υπολογιστής, ένα κινητό τηλέφωνο ή ένα ψηφιακό tablet.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Προσωπικά Δεδομένα</strong> είναι οποιαδήποτε πληροφορία σχετίζεται με ένα ταυτοποιημένο
+					ή ταυτοποιήσιμο άτομο.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Υπηρεσία</strong> αναφέρεται στον Ιστότοπο.</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Πάροχος Υπηρεσιών</strong> σημαίνει οποιοδήποτε φυσικό ή νομικό πρόσωπο που επεξεργάζεται
+					τα δεδομένα εξ ονόματος της Εταιρείας. Αναφέρεται σε τρίτες εταιρείες ή άτομα που απασχολούνται
+					από την Εταιρεία για να διευκολύνουν την Υπηρεσία, να παρέχουν την Υπηρεσία εξ ονόματος της
+					Εταιρείας, να εκτελούν υπηρεσίες που σχετίζονται με την Υπηρεσία ή να βοηθούν την Εταιρεία
+					στην ανάλυση του τρόπου χρήσης της Υπηρεσίας.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Δεδομένα Χρήσης</strong> αναφέρεται σε δεδομένα που συλλέγονται αυτόματα, είτε δημιουργούνται
+					από τη χρήση της Υπηρεσίας είτε από την ίδια την υποδομή της Υπηρεσίας (για παράδειγμα, η διάρκεια
+					μιας επίσκεψης σε μια σελίδα).
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Ιστότοπος</strong> αναφέρεται στην KoukouGata, προσβάσιμη από
+					<a href="https://koukougata.gr" rel="external nofollow noopener" target="_blank">https://koukougata.gr</a>.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Εσείς</strong> σημαίνει το άτομο που έχει πρόσβαση ή χρησιμοποιεί την Υπηρεσία, ή την
+					εταιρεία, ή άλλη νομική οντότητα για λογαριασμό της οποίας το άτομο αυτό έχει πρόσβαση ή χρησιμοποιεί
+					την Υπηρεσία, όπως ισχύει.
+				</p></li></ul>
+		<h2 class="svelte-1vlljhi">Συλλογή και Χρήση των Προσωπικών σας Δεδομένων</h2>
+		<h3 class="svelte-1vlljhi">Τύποι Δεδομένων που Συλλέγονται</h3>
+		<h4>Προσωπικά Δεδομένα</h4>
+		<p class="svelte-1vlljhi">Κατά τη χρήση της Υπηρεσίας μας, ενδέχεται να σας ζητήσουμε να μας παρέχετε ορισμένες
+			προσωπικά αναγνωρίσιμες πληροφορίες που μπορούν να χρησιμοποιηθούν για να επικοινωνήσουμε μαζί
+			σας ή να σας αναγνωρίσουμε. Οι προσωπικά αναγνωρίσιμες πληροφορίες μπορεί να περιλαμβάνουν,
+			αλλά δεν περιορίζονται σε:
+		</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi">Δεδομένα Χρήσης</li></ul>
+		<h4>Δεδομένα Χρήσης</h4>
+		<p class="svelte-1vlljhi">Τα Δεδομένα Χρήσης συλλέγονται αυτόματα κατά τη χρήση της Υπηρεσίας.</p>
+		<p class="svelte-1vlljhi">Τα Δεδομένα Χρήσης μπορεί να περιλαμβάνουν πληροφορίες όπως η διεύθυνση Πρωτοκόλλου Internet
+			της Συσκευής σας (π.χ. διεύθυνση IP), ο τύπος του προγράμματος περιήγησης, η έκδοση του
+			προγράμματος περιήγησης, οι σελίδες της Υπηρεσίας μας που επισκέπτεστε, η ώρα και η ημερομηνία
+			της επίσκεψής σας, ο χρόνος που ξοδεύετε σε αυτές τις σελίδες, μοναδικά αναγνωριστικά συσκευών
+			και άλλα διαγνωστικά δεδομένα.
+		</p>
+		<p class="svelte-1vlljhi">Όταν έχετε πρόσβαση στην Υπηρεσία μέσω κινητής συσκευής ή μέσω αυτής, ενδέχεται να συλλέξουμε
+			αυτόματα ορισμένες πληροφορίες, όπως ο τύπος της κινητής συσκευής που χρησιμοποιείτε, το
+			μοναδικό αναγνωριστικό της κινητής σας συσκευής, η διεύθυνση IP της κινητής σας συσκευής, το
+			λειτουργικό σύστημα της κινητής σας συσκευής, ο τύπος του προγράμματος περιήγησης κινητής
+			Internet που χρησιμοποιείτε, μοναδικά αναγνωριστικά συσκευών και άλλα διαγνωστικά δεδομένα.
+		</p>
+		<p class="svelte-1vlljhi">Ενδέχεται επίσης να συλλέξουμε πληροφορίες που αποστέλλει το πρόγραμμα περιήγησής σας κάθε
+			φορά που επισκέπτεστε την Υπηρεσία μας ή όταν έχετε πρόσβαση στην Υπηρεσία μέσω κινητής
+			συσκευής.
+		</p>
+		<h4>Τεχνολογίες Παρακολούθησης και Cookies</h4>
+		<p class="svelte-1vlljhi">Χρησιμοποιούμε Cookies και παρόμοιες τεχνολογίες παρακολούθησης για να παρακολουθούμε τη
+			δραστηριότητα στην Υπηρεσία μας και να αποθηκεύουμε ορισμένες πληροφορίες. Οι τεχνολογίες
+			παρακολούθησης που χρησιμοποιούνται περιλαμβάνουν φάρους, ετικέτες και σενάρια για τη συλλογή
+			και την παρακολούθηση πληροφοριών και για τη βελτίωση και την ανάλυση της Υπηρεσίας μας. Οι
+			τεχνολογίες που χρησιμοποιούμε μπορεί να περιλαμβάνουν:
+		</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi"><strong>Cookies ή Cookies Περιήγησης.</strong> Ένα cookie είναι ένα μικρό αρχείο που τοποθετείται
+				στη Συσκευή σας. Μπορείτε να δώσετε οδηγίες στο πρόγραμμα περιήγησής σας να απορρίπτει όλα τα
+				Cookies ή να υποδεικνύει πότε αποστέλλεται ένα Cookie. Ωστόσο, εάν δεν αποδεχτείτε τα Cookies,
+				ενδέχεται να μην μπορείτε να χρησιμοποιήσετε ορισμένα μέρη της Υπηρεσίας μας. Εκτός εάν έχετε
+				ρυθμίσει το πρόγραμμα περιήγησής σας ώστε να απορρίπτει τα Cookies, η Υπηρεσία μας ενδέχεται
+				να χρησιμοποιεί Cookies.
+			</li>
+			<li class="svelte-1vlljhi"><strong>Web Beacons.</strong> Ορισμένες ενότητες της Υπηρεσίας μας και τα email μας ενδέχεται
+				να περιέχουν μικρά ηλεκτρονικά αρχεία γνωστά ως web beacons (επίσης αναφερόμενα ως clear gifs,
+				pixel tags και single-pixel gifs) που επιτρέπουν στην Εταιρεία, για παράδειγμα, να μετράει τους
+				χρήστες που επισκέφθηκαν αυτές τις σελίδες ή άνοιξαν ένα email και για άλλα στατιστικά στοιχεία
+				που σχετίζονται με τον ιστότοπο (για παράδειγμα, καταγράφοντας τη δημοτικότητα μιας συγκεκριμένης
+				ενότητας και επαληθεύοντας την ακεραιότητα του συστήματος και των διακομιστών).
+			</li></ul>
+		<p class="svelte-1vlljhi">Τα Cookies μπορεί να είναι «Μόνιμα» ή «Cookies Περιόδου Σύνδεσης». Τα Μόνιμα Cookies
+			παραμένουν στον προσωπικό σας υπολογιστή ή την κινητή σας συσκευή όταν είστε εκτός σύνδεσης,
+			ενώ τα Cookies Περιόδου Σύνδεσης διαγράφονται μόλις κλείσετε το πρόγραμμα περιήγησής σας.
+			Μάθετε περισσότερα για τα cookies στο άρθρο <a href="https://www.privacypolicies.com/blog/privacy-policy-template/#Use_Of_Cookies_Log_Files_And_Tracking" target="_blank">του ιστότοπου Privacy Policies</a>.
+		</p>
+		<p class="svelte-1vlljhi">Χρησιμοποιούμε τόσο Cookies Περιόδου Σύνδεσης όσο και Μόνιμα Cookies για τους σκοπούς που
+			αναφέρονται παρακάτω:
+		</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Απαραίτητα / Ουσιαστικά Cookies</strong></p>
+				<p class="svelte-1vlljhi">Τύπος: Cookies Περιόδου Σύνδεσης</p>
+				<p class="svelte-1vlljhi">Διαχειριζόμενα από: Εμάς</p>
+				<p class="svelte-1vlljhi">Σκοπός: Αυτά τα Cookies είναι απαραίτητα για να σας παρέχουμε υπηρεσίες που διατίθενται
+					μέσω του Ιστότοπου και να σας επιτρέψουν να χρησιμοποιήσετε ορισμένες από τις λειτουργίες
+					του. Βοηθούν στην ταυτοποίηση των χρηστών και στην αποτροπή δόλιας χρήσης λογαριασμών
+					χρηστών. Χωρίς αυτά τα Cookies, οι υπηρεσίες που έχετε ζητήσει δεν μπορούν να παρασχεθούν,
+					και τα χρησιμοποιούμε μόνο για να σας παρέχουμε αυτές τις υπηρεσίες.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Cookies Αποδοχής Πολιτικής / Ειδοποίησης Cookies</strong></p>
+				<p class="svelte-1vlljhi">Τύπος: Μόνιμα Cookies</p>
+				<p class="svelte-1vlljhi">Διαχειριζόμενα από: Εμάς</p>
+				<p class="svelte-1vlljhi">Σκοπός: Αυτά τα Cookies αναγνωρίζουν εάν οι χρήστες έχουν αποδεχθεί τη χρήση των cookies
+					στον Ιστότοπο.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Cookies Λειτουργικότητας</strong></p>
+				<p class="svelte-1vlljhi">Τύπος: Μόνιμα Cookies</p>
+				<p class="svelte-1vlljhi">Διαχειριζόμενα από: Εμάς</p>
+				<p class="svelte-1vlljhi">Σκοπός: Αυτά τα Cookies μας επιτρέπουν να θυμόμαστε τις επιλογές που κάνετε όταν
+					χρησιμοποιείτε τον Ιστότοπο, όπως η απομνημόνευση των στοιχείων σύνδεσής σας ή η προτίμηση
+					γλώσσας. Ο σκοπός αυτών των Cookies είναι να σας παρέχουμε μια πιο προσωπική εμπειρία και
+					να αποφεύγεται η επανεισαγωγή των προτιμήσεών σας κάθε φορά που χρησιμοποιείτε τον
+					Ιστότοπο.
+				</p></li></ul>
+		<p class="svelte-1vlljhi">Για περισσότερες πληροφορίες σχετικά με τα cookies που χρησιμοποιούμε και τις επιλογές σας
+			σχετικά με τα cookies, επισκεφθείτε την Πολιτική μας για τα Cookies ή την ενότητα Cookies της
+			Πολιτικής Απορρήτου μας.
+		</p>
+		<h3 class="svelte-1vlljhi">Χρήση των Προσωπικών σας Δεδομένων</h3>
+		<p class="svelte-1vlljhi">Η Εταιρεία μπορεί να χρησιμοποιεί Προσωπικά Δεδομένα για τους ακόλουθους σκοπούς:</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Για την παροχή και διατήρηση της Υπηρεσίας μας</strong>, συμπεριλαμβανομένης της
+					παρακολούθησης της χρήσης της Υπηρεσίας μας.
+				</p></li>
+			<li class="svelte-1vlljhi"><p class="svelte-1vlljhi"><strong>Για άλλους σκοπούς:</strong> Μπορούμε να χρησιμοποιήσουμε τα δεδομένα σας για άλλους
+					σκοπούς, όπως ανάλυση δεδομένων, αναγνώριση τάσεων χρήσης, προσδιορισμό της αποτελεσματικότητας
+					των προωθητικών μας εκστρατειών και για την αξιολόγηση και βελτίωση της Υπηρεσίας μας, των
+					προϊόντων, των υπηρεσιών, του μάρκετινγκ και της εμπειρίας σας.
+				</p></li></ul>
+		<p class="svelte-1vlljhi">Μπορούμε να μοιραστούμε τα προσωπικά σας δεδομένα στις ακόλουθες περιπτώσεις:</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi"><strong>Με Παρόχους Υπηρεσιών:</strong> Μπορούμε να μοιραστούμε τα προσωπικά σας δεδομένα με
+				Παρόχους Υπηρεσιών για την παρακολούθηση και ανάλυση της χρήσης της Υπηρεσίας μας, για να επικοινωνήσουμε
+				μαζί σας.
+			</li>
+			<li class="svelte-1vlljhi"><strong>Με Συνδεδεμένες Εταιρείες:</strong> Μπορούμε να μοιραστούμε τα δεδομένα σας με τις συνδεδεμένες
+				εταιρείες μας, οπότε θα απαιτήσουμε από αυτές να σεβαστούν αυτήν την Πολιτική Απορρήτου. Οι συνδεδεμένες
+				εταιρείες περιλαμβάνουν τη μητρική μας εταιρεία και οποιεσδήποτε άλλες θυγατρικές, συνεργάτες
+				κοινοπραξίας ή άλλες εταιρείες που ελέγχουμε ή βρίσκονται υπό κοινό έλεγχο μαζί μας.
+			</li>
+			<li class="svelte-1vlljhi"><strong>Με επιχειρηματικούς συνεργάτες:</strong> Μπορούμε να μοιραστούμε τα δεδομένα σας με τους
+				επιχειρηματικούς μας συνεργάτες για να σας προσφέρουμε ορισμένα προϊόντα, υπηρεσίες ή προσφορές.
+			</li>
+			<li class="svelte-1vlljhi"><strong>Με τη συγκατάθεσή σας:</strong> Μπορούμε να αποκαλύψουμε τα προσωπικά σας δεδομένα για
+				οποιονδήποτε άλλο σκοπό με τη συγκατάθεσή σας.
+			</li></ul>
+		<h3 class="svelte-1vlljhi">Διατήρηση των Προσωπικών σας Δεδομένων</h3>
+		<p class="svelte-1vlljhi">Η Εταιρεία θα διατηρεί τα Προσωπικά σας Δεδομένα μόνο για όσο διάστημα είναι απαραίτητο για
+			τους σκοπούς που ορίζονται σε αυτήν την Πολιτική Απορρήτου. Θα διατηρούμε και θα
+			χρησιμοποιούμε τα Προσωπικά σας Δεδομένα στον βαθμό που είναι απαραίτητο για να συμμορφωθούμε
+			με τις νομικές μας υποχρεώσεις (για παράδειγμα, εάν απαιτείται να διατηρήσουμε τα δεδομένα σας
+			για να συμμορφωθούμε με τις ισχύουσες νομοθεσίες), να επιλύουμε διαφορές και να επιβάλλουμε
+			τις νομικές μας συμφωνίες και πολιτικές.
+		</p>
+		<p class="svelte-1vlljhi">Η Εταιρεία θα διατηρεί επίσης τα Δεδομένα Χρήσης για εσωτερικούς σκοπούς ανάλυσης. Τα Δεδομένα
+			Χρήσης γενικά διατηρούνται για μικρότερο χρονικό διάστημα, εκτός εάν τα δεδομένα αυτά
+			χρησιμοποιούνται για την ενίσχυση της ασφάλειας ή τη βελτίωση της λειτουργικότητας της
+			Υπηρεσίας μας, ή εάν είμαστε νομικά υποχρεωμένοι να διατηρήσουμε αυτά τα δεδομένα για
+			μεγαλύτερα χρονικά διαστήματα.
+		</p>
+		<h3 class="svelte-1vlljhi">Μεταφορά των Προσωπικών σας Δεδομένων</h3>
+		<p class="svelte-1vlljhi">Τα δεδομένα σας, συμπεριλαμβανομένων των Προσωπικών Δεδομένων, επεξεργάζονται στα γραφεία
+			λειτουργίας της Εταιρείας και σε οποιαδήποτε άλλα μέρη όπου βρίσκονται τα εμπλεκόμενα μέρη
+			στην επεξεργασία. Αυτό σημαίνει ότι οι πληροφορίες αυτές ενδέχεται να μεταφερθούν — και να
+			διατηρηθούν σε — υπολογιστές που βρίσκονται εκτός της πολιτείας, της επαρχίας, της χώρας σας ή
+			άλλης κυβερνητικής δικαιοδοσίας, όπου οι νόμοι περί προστασίας δεδομένων μπορεί να διαφέρουν
+			από εκείνους της δικαιοδοσίας σας.
+		</p>
+		<p class="svelte-1vlljhi">Η συγκατάθεσή σας σε αυτήν την Πολιτική Απορρήτου ακολουθούμενη από την υποβολή αυτών των
+			πληροφοριών αντιπροσωπεύει τη συμφωνία σας με τη μεταφορά αυτή.
+		</p>
+		<p class="svelte-1vlljhi">Η Εταιρεία θα λάβει όλα τα απαραίτητα μέτρα για να διασφαλίσει ότι τα δεδομένα σας θα
+			υποβληθούν σε επεξεργασία με ασφάλεια και σύμφωνα με αυτήν την Πολιτική Απορρήτου και καμία
+			μεταφορά των Προσωπικών σας Δεδομένων δεν θα πραγματοποιηθεί σε έναν οργανισμό ή χώρα, εκτός
+			εάν υπάρχουν επαρκείς έλεγχοι στη θέση τους, συμπεριλαμβανομένης της ασφάλειας των δεδομένων
+			σας και άλλων προσωπικών πληροφοριών.
+		</p>
+		<h3 class="svelte-1vlljhi">Διαγραφή των Προσωπικών σας Δεδομένων</h3>
+		<p class="svelte-1vlljhi">Έχετε το δικαίωμα να ζητήσετε τη διαγραφή των Προσωπικών Δεδομένων που συλλέγουμε μέσω των
+			υπηρεσιών τρίτων όπως το Google AdSense και το Google Analytics.
+		</p>
+		<p class="svelte-1vlljhi">Για να ζητήσετε τη διαγραφή, διόρθωση ή πρόσβαση στα δεδομένα σας, μπορείτε να επικοινωνήσετε
+			μαζί μας ή να χρησιμοποιήσετε τα εργαλεία που προσφέρουν οι υπηρεσίες τρίτων για να
+			διαχειριστείτε τα προσωπικά σας δεδομένα.
+		</p>
+		<p class="svelte-1vlljhi">Σημειώστε ότι μπορεί να χρειαστεί να διατηρήσουμε ορισμένα δεδομένα σύμφωνα με νομικές
+			υποχρεώσεις ή νόμιμες βάσεις, εφόσον αυτό απαιτείται από τον νόμο.
+		</p>
+		<h3 class="svelte-1vlljhi">Αποκάλυψη των Προσωπικών σας Δεδομένων</h3>
+		<h4>Επιβολή του Νόμου</h4>
+		<p class="svelte-1vlljhi">Υπό ορισμένες συνθήκες, η Εταιρεία ενδέχεται να υποχρεωθεί να αποκαλύψει τα Προσωπικά σας
+			Δεδομένα εάν απαιτείται να το πράξει από το νόμο ή σε απάντηση σε έγκυρα αιτήματα δημόσιων
+			αρχών (π.χ. δικαστήριο ή κρατική υπηρεσία).
+		</p>
+		<h4>Άλλες Νομικές Υποχρεώσεις</h4>
+		<p class="svelte-1vlljhi">Η Εταιρεία μπορεί να αποκαλύψει τα Προσωπικά σας Δεδομένα εφόσον υπάρχει καλή πίστη ότι αυτή η
+			ενέργεια είναι απαραίτητη για:
+		</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi">Συμμόρφωση με νομική υποχρέωση</li>
+			<li class="svelte-1vlljhi">Προστασία και υπεράσπιση των δικαιωμάτων ή της περιουσίας της Εταιρείας</li>
+			<li class="svelte-1vlljhi">Πρόληψη ή διερεύνηση πιθανών παραβάσεων σε σχέση με την Υπηρεσία</li>
+			<li class="svelte-1vlljhi">Προστασία της προσωπικής ασφάλειας των χρηστών της Υπηρεσίας ή του κοινού</li>
+			<li class="svelte-1vlljhi">Προστασία από νομική ευθύνη</li></ul>
+		<h3 class="svelte-1vlljhi">Ασφάλεια των Προσωπικών σας Δεδομένων</h3>
+		<p class="svelte-1vlljhi">Η ασφάλεια των Προσωπικών σας Δεδομένων είναι σημαντική για εμάς, αλλά να θυμάστε ότι καμία
+			μέθοδος μετάδοσης μέσω του Διαδικτύου ή μέθοδος ηλεκτρονικής αποθήκευσης δεν είναι 100%
+			ασφαλής. Παρόλο που προσπαθούμε να χρησιμοποιούμε εμπορικά αποδεκτά μέσα για να προστατεύσουμε
+			τα Προσωπικά σας Δεδομένα, δεν μπορούμε να εγγυηθούμε την απόλυτη ασφάλεια.
+		</p>
+		<h2 class="svelte-1vlljhi">Απόρρητο Ανηλίκων</h2>
+		<p class="svelte-1vlljhi">Η Υπηρεσία μας δεν απευθύνεται σε κανέναν κάτω των 13 ετών. Δεν συλλέγουμε εν γνώσει μας
+			προσωπικά αναγνωρίσιμες πληροφορίες από κανέναν κάτω των 13 ετών. Εάν είστε γονέας ή κηδεμόνας
+			και γνωρίζετε ότι το παιδί σας μας έχει παράσχει Προσωπικά Δεδομένα, παρακαλούμε επικοινωνήστε
+			μαζί μας. Εάν αντιληφθούμε ότι έχουμε συλλέξει Προσωπικά Δεδομένα από κάποιον κάτω των 13 ετών
+			χωρίς επιβεβαίωση της γονικής συναίνεσης, θα λάβουμε μέτρα για να αφαιρέσουμε αυτές τις
+			πληροφορίες από τους διακομιστές μας.
+		</p>
+		<p class="svelte-1vlljhi">Εάν χρειαστεί να βασιστούμε στη συγκατάθεση ως νομική βάση για την επεξεργασία των πληροφοριών
+			σας και η χώρα σας απαιτεί γονική συναίνεση, ενδέχεται να ζητήσουμε τη συγκατάθεση του γονέα
+			σας προτού συλλέξουμε και χρησιμοποιήσουμε αυτές τις πληροφορίες.
+		</p>
+		<h2 class="svelte-1vlljhi">Σύνδεσμοι προς Άλλους Ιστότοπους</h2>
+		<p class="svelte-1vlljhi">Η Υπηρεσία μας μπορεί να περιέχει συνδέσμους προς άλλους ιστότοπους που δεν λειτουργούν από
+			εμάς. Εάν κάνετε κλικ σε σύνδεσμο τρίτου μέρους, θα μεταφερθείτε στον ιστότοπο αυτού του
+			τρίτου μέρους. Σας συμβουλεύουμε έντονα να διαβάσετε την Πολιτική Απορρήτου κάθε ιστότοπου που
+			επισκέπτεστε.
+		</p>
+		<p class="svelte-1vlljhi">Δεν έχουμε κανέναν έλεγχο και δεν αναλαμβάνουμε καμία ευθύνη για το περιεχόμενο, τις πολιτικές
+			απορρήτου ή τις πρακτικές οποιωνδήποτε ιστότοπων ή υπηρεσιών τρίτων μερών.
+		</p>
+		<h2 class="svelte-1vlljhi">Αλλαγές σε αυτήν την Πολιτική Απορρήτου</h2>
+		<p class="svelte-1vlljhi">Ενδέχεται να ενημερώνουμε την Πολιτική Απορρήτου μας κατά καιρούς. Θα σας ειδοποιήσουμε για
+			οποιεσδήποτε αλλαγές αναρτώντας τη νέα Πολιτική Απορρήτου σε αυτήν τη σελίδα.
+		</p>
+		<p class="svelte-1vlljhi">Θα σας ενημερώσουμε με εμφανή ειδοποίηση στην Υπηρεσία μας πριν από την εφαρμογή της αλλαγής και θα ενημερώσουμε την ημερομηνία &quot;Τελευταία ενημέρωση&quot; στην κορυφή αυτής της Πολιτικής Απορρήτου.
+		</p>
+	
+		<p class="svelte-1vlljhi">Σας συμβουλεύουμε να ανατρέχετε περιοδικά σε αυτήν την Πολιτική Απορρήτου για τυχόν αλλαγές.
+			Οι αλλαγές σε αυτήν την Πολιτική Απορρήτου ισχύουν από τη στιγμή που δημοσιεύονται σε αυτήν τη
+			σελίδα.
+		</p>
+		<h2 class="svelte-1vlljhi">Επικοινωνήστε Μαζί Μας</h2>
+		<p class="svelte-1vlljhi">Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτήν την Πολιτική Απορρήτου, μπορείτε να
+			επικοινωνήσετε μαζί μας:
+		</p>
+		<ul class="svelte-1vlljhi"><li class="svelte-1vlljhi">Μέσω email: koukougata[at]gmail[dot]com</li></ul>
+		<a href="/" target="_self" class="button style--solid size--medium color--primary  svelte-6zxw49" data-sveltekit-preload-data>
+	Επιστροφή στην Αρχική
+</a></div>
+</div></main>
+<footer class="svelte-1s1fw90">
+	<div class="content svelte-1s1fw90"><div class="copyright svelte-1s1fw90"><p class="svelte-1s1fw90">© 2024 KoukouGata
+			</p></div>
+		<div class="socials svelte-1s1fw90"><a href="/rss.xml" target="_blank" rel="noopener noreferrer" title=" Εγγραφείτε στο RSS Feed" class="svelte-1llmev"><svg width="100%" height="100%" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19C12 14.8 9.2 12 5 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 19C19 10.6 13.4 5 5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 19.01L5.01 18.9989" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+			<noscript>
+	
+	<style>.theme-toggle {
+			display: none !important;
+		}
+	</style></noscript>
+<button class="theme-toggle svelte-niuf71" title="Αλλαγή μεταξύ φωτεινού και σκοτεινού θέματος"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><mask id="moon" class="svelte-niuf71"><rect x="0" y="0" width="100%" height="100%" fill="white" class="svelte-niuf71"></rect><circle cx="40" cy="8" r="11" fill="black" class="svelte-niuf71"></circle></mask><circle id="sun" cx="12" cy="12" r="11" mask="url(#moon)" class="svelte-niuf71"></circle><g id="sun-beams" class="svelte-niuf71"><line x1="12" y1="1" x2="12" y2="3" class="svelte-niuf71"></line><line x1="12" y1="21" x2="12" y2="23" class="svelte-niuf71"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" class="svelte-niuf71"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" class="svelte-niuf71"></line><line x1="1" y1="12" x2="3" y2="12" class="svelte-niuf71"></line><line x1="21" y1="12" x2="23" y2="12" class="svelte-niuf71"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" class="svelte-niuf71"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" class="svelte-niuf71"></line></g></svg>
+	<span class="label svelte-niuf71">Auto</span>
+</button>
+			
+			<button class="cookie-toggle svelte-1gmkilv" title="Άνοιξε τις ρυθμίσεις Cookies"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" class="svelte-1gmkilv"><circle cx="12" cy="12" r="10" fill="var(--cookie-icon-color)"></circle><mask id="cookie-bite"><rect x="0" y="0" width="100%" height="100%" fill="white"></rect><circle cx="18" cy="6" r="5" fill="black"></circle></mask><circle cx="12" cy="12" r="10" fill="var(--cookie-icon-color)" mask="url(#cookie-bite)"></circle><circle class="cookie-chip svelte-1gmkilv" cx="10" cy="10" r="1.5"></circle><circle class="cookie-chip svelte-1gmkilv" cx="14" cy="8" r="1.2"></circle><circle class="cookie-chip svelte-1gmkilv" cx="16" cy="14" r="1.3"></circle><circle class="cookie-chip svelte-1gmkilv" cx="8" cy="15" r="1.4"></circle></svg></button></div></div>
+</footer></main>
+
+
+
+
+			
+			<script>
+				{
+					__sveltekit_ta0j8z = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.3060a60e.js"),
+						import("./_app/immutable/entry/app.45975669.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3, 14],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>

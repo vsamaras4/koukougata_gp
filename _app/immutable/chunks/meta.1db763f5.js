@@ -1,0 +1,1 @@
+const t="https://koukougata.gr/",e=["KoukouGata","SvelteKit","Template","Blog","Starter","Static Site"],a="A light, neat, and easy-to-use SvelteKit template for your next website.",s="KoukouGata",o=`${t}/images/site-preview.png`;export{a as d,o as i,e as k,t as s,s as t};
