@@ -24,8 +24,8 @@
     
         <item>
           <guid>https://koukougata.gr//mini-test</guid>
-          <title>Mini test</title>
-          <description>How to manage existing blog posts and create new ones</description>
+          <title>Μίνι τεστ</title>
+          <description>Μικρό τεστ για να δοκιμάσω την σελίδα</description>
           <link>https://koukougata.gr//mini-test</link>
           <pubDate>Tue, 18 Jun 2024 00:55:15 +0300</pubDate>
           <category>Gaming</category>
@@ -96,8 +96,8 @@
       
         <item>
           <guid>https://koukougata.gr//example-test</guid>
-          <title>Post example test</title>
-          <description>An example of a post, to check the recent posts functionality.</description>
+          <title>Δοκιμή παραδείγματος άρθρου</title>
+          <description>Ένα παράδειγμα άρθρου, για να τσεκάρω τη λειτουργία πρόσφατων άρθρων.</description>
           <link>https://koukougata.gr//example-test</link>
           <pubDate>Sat, 15 Jun 2024 13:21:00 +0300</pubDate>
           <category>Example</category>
@@ -144,8 +144,8 @@
       
         <item>
           <guid>https://koukougata.gr//customization</guid>
-          <title>How to Customize this Template</title>
-          <description>How to customize what you're seeing here and make it your own.</description>
+          <title>Πως να προσωπικοποιήσεις αυτό το Template</title>
+          <description>Πως να προσωπικοποιήσεις αυτό το Template και να το κάνεις δικό σου.</description>
           <link>https://koukougata.gr//customization</link>
           <pubDate>Sun, 23 Apr 2023 00:55:27 +0300</pubDate>
           <category>Documentation</category>
@@ -192,8 +192,8 @@
       
         <item>
           <guid>https://koukougata.gr//project-structure</guid>
-          <title>Project Structure</title>
-          <description>How code and structure are organized.</description>
+          <title>Δομή πρότζεκτ</title>
+          <description>Πως οργανώνεται ο κώδικας και η δομή.</description>
           <link>https://koukougata.gr//project-structure</link>
           <pubDate>Sun, 23 Apr 2023 00:55:21 +0300</pubDate>
           <category>Example</category>
